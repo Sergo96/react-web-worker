@@ -60,8 +60,15 @@ The worker runs your function **synchronously** on the worker thread. It does no
 
 ```bash
 npm install
+npm test
 npm run build
 ```
+
+See [CHANGELOG.md](./CHANGELOG.md) for release notes.
+
+## Example app
+
+A minimal Vite + React demo lives in [`examples/vite-react`](./examples/vite-react). Build the library from the repo root, then follow that folder’s README to run the dev server.
 
 ## License
 
