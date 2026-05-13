@@ -1,0 +1,48 @@
+{
+  "name": "react-web-worker",
+  "version": "0.1.0",
+  "description": "React hook for running a function in a Web Worker via Blob URL",
+  "license": "MIT",
+  "author": "Sergo96",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sergo96/react-web-worker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sergo96/react-web-worker/issues"
+  },
+  "homepage": "https://github.com/Sergo96/react-web-worker#readme",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.6",
+    "react": "^19.1.0",
+    "typescript": "^5.8.3"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "web-worker",
+    "worker",
+    "blob"
+  ]
+}
