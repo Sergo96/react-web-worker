@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import { useBlobWorker } from "react-web-worker";
+import { useBlobWorker } from "@skha96/react-web-worker";
 
 export default function App() {
   const workerFn = useCallback((n: number) => {

@@ -1,9 +1,12 @@
 {
-  "name": "react-web-worker",
-  "version": "0.1.0",
+  "name": "@skha96/react-web-worker",
+  "version": "0.1.1",
   "description": "React hook for running a function in a Web Worker via Blob URL",
   "license": "MIT",
   "author": "Sergo96",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sergo96/react-web-worker.git"

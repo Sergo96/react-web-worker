@@ -2,10 +2,12 @@
 
 React hook for running a **synchronous** function in a [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API) using an inline script (Blob URL). Useful for CPU-heavy work without blocking the UI thread.
 
+**npm package:** [`@skha96/react-web-worker`](https://www.npmjs.com/package/@skha96/react-web-worker) (the unscoped name `react-web-worker` is blocked by the registry as too similar to [`react-webworker`](https://www.npmjs.com/package/react-webworker)).
+
 ## Install
 
 ```bash
-npm install react-web-worker
+npm install @skha96/react-web-worker
 ```
 
 Peer dependency: **React 17+**.
@@ -14,7 +16,7 @@ Peer dependency: **React 17+**.
 
 ```tsx
 import { useCallback } from "react";
-import { useBlobWorker } from "react-web-worker";
+import { useBlobWorker } from "@skha96/react-web-worker";
 
 function Demo() {
   const workerFn = useCallback((n: number) => {
