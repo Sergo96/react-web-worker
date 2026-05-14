@@ -1,13 +1,13 @@
-# react-web-worker
+# Offthread
 
-React hook for running a **synchronous** function in a [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API) using an inline script (Blob URL). Useful for CPU-heavy work without blocking the UI thread.
+**Offthread** is a tiny React hook for moving **synchronous** work into a [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API) using an inline Blob script, so the UI thread stays responsive.
 
-**npm package:** [`@skha96/react-web-worker`](https://www.npmjs.com/package/@skha96/react-web-worker) (the unscoped name `react-web-worker` is blocked by the registry as too similar to [`react-webworker`](https://www.npmjs.com/package/react-webworker)).
+Install from npm as **`offthread`**. (The name `react-web-worker` is blocked by the registry as too similar to [`react-webworker`](https://www.npmjs.com/package/react-webworker).)
 
 ## Install
 
 ```bash
-npm install @skha96/react-web-worker
+npm install offthread
 ```
 
 Peer dependency: **React 17+**.
@@ -16,7 +16,7 @@ Peer dependency: **React 17+**.
 
 ```tsx
 import { useCallback } from "react";
-import { useBlobWorker } from "@skha96/react-web-worker";
+import { useBlobWorker } from "offthread";
 
 function Demo() {
   const workerFn = useCallback((n: number) => {
@@ -70,7 +70,7 @@ See [CHANGELOG.md](./CHANGELOG.md) for release notes.
 
 ## Example app
 
-A minimal Vite + React demo lives in [`examples/vite-react`](./examples/vite-react). Build the library from the repo root, then follow that folder’s README to run the dev server.
+A minimal Vite + React demo for **Offthread** lives in [`examples/vite-react`](./examples/vite-react). Build the library from the repo root, then follow that folder’s README to run the dev server.
 
 ## License
 

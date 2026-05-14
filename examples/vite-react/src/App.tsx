@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import { useBlobWorker } from "@skha96/react-web-worker";
+import { useBlobWorker } from "offthread";
 
 export default function App() {
   const workerFn = useCallback((n: number) => {
@@ -13,9 +13,9 @@ export default function App() {
 
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", padding: 24, maxWidth: 480 }}>
-      <h1 style={{ marginTop: 0 }}>react-web-worker</h1>
+      <h1 style={{ marginTop: 0 }}>Offthread</h1>
       <p style={{ color: "#444", fontSize: 14 }}>
-        CPU work runs in a Web Worker (Blob URL). Tweak iterations and run.
+        Example app for the <code>offthread</code> package. CPU work runs in a Web Worker (Blob URL).
       </p>
       <label style={{ display: "block", marginBottom: 12 }}>
         Iterations{" "}

@@ -1,4 +1,4 @@
-# Vite + React example
+# Vite + React example (Offthread)
 
 From the **repository root**:
 
@@ -12,4 +12,4 @@ npm run dev
 
 Then open the URL Vite prints (usually `http://localhost:5173`).
 
-The example depends on the local package via `"@skha96/react-web-worker": "file:../.."` in `package.json`, so the library must be built at least once before `npm install` in this folder resolves types and `dist`.
+The example depends on the local package via `"offthread": "file:../.."` in `package.json`, so the library must be built at least once before `npm install` in this folder resolves types and `dist`.

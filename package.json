@@ -1,12 +1,9 @@
 {
-  "name": "@skha96/react-web-worker",
-  "version": "0.1.1",
-  "description": "React hook for running a function in a Web Worker via Blob URL",
+  "name": "offthread",
+  "version": "0.2.0",
+  "description": "Offthread — React hook for Web Workers via Blob URL",
   "license": "MIT",
   "author": "Sergo96",
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sergo96/react-web-worker.git"
@@ -54,6 +51,8 @@
     "hook",
     "web-worker",
     "worker",
-    "blob"
+    "blob",
+    "offthread",
+    "off-main-thread"
   ]
 }
